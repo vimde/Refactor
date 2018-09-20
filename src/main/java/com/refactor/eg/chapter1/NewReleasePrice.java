@@ -9,9 +9,7 @@ public class NewReleasePrice extends Price {
 	
 	@Override
 	public double getCharge(int daysRented) {
-		double amount = 0;
-		amount += daysRented * 3;
-		return amount;
+		return daysRented * 3;
 	}
 
 }
